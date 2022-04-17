@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="images/logo shop.png">
+    <title>Belanja Cepat</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <img src="images/logo shop.png" alt="logo" height="35px" width="auto">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+    
+<main>
+    <div class="container p-5">
+    <div class="col-md-10 mx-auto col-lg-5">
+        <form action="" class="p-4 p-md-5 border rounded-3 bg-light">
+            <h3 class="text-center">Login</h3>
+            <p class="text-center">Gunakan akun anda untuk masuk</p>
+            <div class="form-floating mb-3">
+                <input required name="email" id="email" type="email" class="form-control" placeholder="Email">
+                <label for="email">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input required name="password" id="password" type="password" class="form-control" placeholder="Password">
+                <label for="password">Password</label>
+            </div>
+            <button name="login" id="login" class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+            <hr class="my-4">
+            <small class="text-muted">Belum punya akun? <a href="form_register.html">klik disini</a> untuk buat akun baru</small>
+        </form>
+    </div>
+    </div>
+  
+</main>
+
+    <div class="container">
+        <footer class="py-3 mt-4">
+            <ul class="nav justify-content-center pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link px-2 text-muted">Product</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">@ 2022 Tugas Praktikum Web</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

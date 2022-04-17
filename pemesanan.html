@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="images/logo shop.png">
+    <title>Belanja Cepat</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <img src="images/logo shop.png" alt="logo" height="35px" width="auto">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+    
+<main>
+    
+    <div class="container col-lg-8 px-4 py-5">
+        <div class="row py-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="fw-bold " id="namaproduk">Produk</h1>
+            <h3 class="fw-bold text-success mb-4" id="hargaproduk">Rp Harga</h3>
+            <div class="mb-2">Jumlah Produk</div> 
+            <div class="d-flex justify-content-center justify-content-lg-start">
+                <button class="btn btn-secondary" onclick="dec(); calculate();">-</button>
+                <h5 class="px-3 mt-2" id="quantity">1</h5>
+                <button class="btn btn-secondary" onclick="inc(); calculate();">+</button>
+            </div>
+            
+            <div class="col-12 mt-4">
+              <label for="kurir" class="form-label">Metode Pengiriman</label>
+                <select required id="kurir" class="form-select">
+                    <option selected disabled value=""></option>
+                    <option>JNE</option>
+                    <option>TIKI</option>
+                    <option>Sicepat</option>
+                    <option>J&T Express</option>
+                    <option>Ninja Express</option>
+                </select>
+            </div>
+            <div class="col-12 mt-3">
+              <label for="metode" class="form-label">Metode Pembayaran</label>
+                <select required id="metode" class="form-select">
+                    <option selected disabled value=""></option>
+                    <option>Kartu Debit</option>
+                    <option>Kartu Kredit</option>
+                    <option>E-Money</option>
+                    <option>Minimarket</option>
+                </select>
+            </div>
+          </div>
+          <div class="mx-auto mt-5 mt-lg-0 col-lg-6">
+            <div class="p-4 p-lg-5 border rounded-3 bg-light">
+                <div class="d-flex justify-content-between">
+                    <div>Subtotal</div>
+                    <div id="subtotal">Rp Harga</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>Ongkir</div>
+                    <div id="ongkir">Rp 10000</div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">Total</div>
+                    <div class="fw-bold" id="total">Rp Harga</div>
+                </div>
+                <a class="w-100 btn btn-primary mt-4" href="index.html">Checkout</a>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+  
+</main>
+
+    <div class="container">
+        <footer class="py-3 mt-4">
+            <ul class="nav justify-content-center pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link px-2 text-muted">Product</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">@ 2022 Tugas Praktikum Web</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script_pemesanan.js"></script>
+  </body>
+</html>
